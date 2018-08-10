@@ -14,8 +14,12 @@
       <a-animation attribute="rotation" from="20 0 0" to="20 360 0" direction="alternate"
                    dur="4000" repeat="indefinite" easing="ease"><a-animation>
     </a-box>
-    <a-camera position="0 1 4" cursor-visible="true" cursor-scale="2" cursor-color="#0095DD" cursor-opacity="0.5">
+    <!-- Camera要素 -->
+    <a-camera wasd-controls-enabled="true" position="0 1.8 0">
+      <!-- カーソルをカメラの内側に置くことで子要素の振る舞いになる -->
+      <a-cursor color="#2E3A87">
     </a-camera>
+
     <a-light type="directional" color="#FFF" intensity="0.5" position="-1 1 2"></a-light>
     <a-light type="ambient" color="#FFF"></a-light>
 
