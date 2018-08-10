@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>MDN Games: A-Frame demo</title>
+  <title>A-Frame demo</title>
   <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
   <!-- ここでA-Frameフレームワークをページにインクルードする -->
 </head>
@@ -18,6 +18,7 @@
     <a-camera wasd-controls-enabled="true" position="0 1.8 0">
       <!-- カーソルをカメラの内側に置くことで子要素の振る舞いになる -->
       <a-cursor color="#2E3A87">
+      <a-entity camera look-controls>
     </a-camera>
 
     <a-light type="directional" color="#FFF" intensity="0.5" position="-1 1 2"></a-light>
